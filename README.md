@@ -1,5 +1,5 @@
 ### Onpoint Test
 
-npm i - загрузка зависимостей
-npm run build - билд проекта
-npm start - запуск проекта
+npm i - загрузка зависимостей <br/>
+npm run build - билд проекта <br/>
+npm start - запуск проекта <br/>
