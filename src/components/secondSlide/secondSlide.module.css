@@ -1,0 +1,108 @@
+.second {
+    width: 1024px;
+    height: 100%;
+    position: relative;
+}
+
+.textBlock {
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
+    right: 100px;
+    height: 400px;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    overflow: hidden;
+    overflow-y: none;
+    font-size: 25px;
+    padding: 30px;
+   
+}
+
+.textHeader {
+    margin-left: 50px;
+    margin-top: 130px;
+    font-size: 30px;
+}
+
+.scrollSection {
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+}
+
+.scrollBoard {
+    width: 3px;
+    height: 450px;
+    background:#000;
+   
+}
+
+.scrollObj {
+    width: 20px;
+    height: 100px;
+    background-image: linear-gradient(0.25turn, #e196b7, #cf578d, #8e406a );
+    border-radius: 14px;
+}
+
+.semens img:first-child {
+    position: absolute;
+    width: 900px;
+    top: 20%;
+    right: -250px;
+    opacity: 0;
+}
+
+.semens img:nth-child(2) {
+    position: absolute;
+    width: 500px;
+    top: 17%;
+    right: -60px;
+    opacity: 0;
+}
+
+.semens img:nth-child(3) {
+    position: absolute;
+    width: 300px;
+    top: 17%;
+    right: -30px;
+    opacity: 0;
+}
+
+.semens img:nth-child(4) {
+    position: absolute;
+    width: 400px;
+    bottom: 11%;
+    right: -300px;
+    opacity: 0;
+}
+
+.semens img:nth-child(5) {
+    position: absolute;
+    width: 200px;
+    bottom: 9%;
+    right: -100px;
+    opacity: 0;
+    
+}
+
+
+
+.active {
+    animation: appear 3s ease-in-out forwards;
+}
+
+.diActive {
+    animation: disappear .3s ease-in-out forwards;
+}
+
+@keyframes appear {
+    from {opacity: 0; transform: translate(20px, 20px);}
+    to {opacity: 1;transform: translate(-20px, -20px)}
+}
+
+
+@keyframes disappear {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}

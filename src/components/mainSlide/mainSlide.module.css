@@ -1,0 +1,208 @@
+.main {
+    width: 1024px;
+    height: 100vh;
+    position: relative;
+}
+
+.main_text {
+    position: absolute;
+    top: 120px;
+    left: 140px;
+    min-height: 100px;
+    display: grid;
+    grid-template-areas: "hello hello"
+                         "this this"
+                         "commersial commersial"
+                         "stuff button";
+    z-index: 5;
+    line-height: 110px;
+
+}
+
+.main_text span:first-child {
+    grid-area: hello;
+    font-size: 35px;
+    text-transform: uppercase;
+    justify-self: start;
+}
+
+.main_text span:nth-child(2) {
+    grid-area: this;
+    font-size: 105px;
+    text-transform: uppercase;
+    justify-self: start;
+    font-weight: 100;
+}
+.main_text span:nth-child(3) {
+    grid-area: commersial;
+    font-size:  105px;
+    text-transform: uppercase;
+    justify-self: start;
+    font-weight: 100;
+    
+}
+.main_text span:nth-child(4) {
+    grid-area: stuff;
+    font-size:  105px;
+    text-transform: uppercase;
+    justify-self: start;
+    font-weight: 100;
+}
+
+.main_text button {
+    grid-area: button;
+    border: none;
+    background: #ff6a9f;
+    border-radius: 50px;
+    height: 80px;
+    align-self: center;
+    display: flex;
+}
+
+.main_text button div {
+    color: white;
+    width: 50px;
+    height: 50px;
+    background: #000;
+    border-radius: 50%;
+    align-self: center;
+    margin-left: 10px;
+    -webkit-box-shadow: -3px -3px 6px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -3px -3px 6px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: -3px -3px 6px 2px rgba(0, 0, 0, 0.2);
+    /* -webkit-box-shadow: 4px 4px 6px 2px rgba(255, 255, 255, 0.2);
+    -moz-box-shadow: 4px 4px 6px 2px rgba(255, 255, 255, 0.2);
+    box-shadow: 4px 4px 6px 2px rgba(255, 255, 255, 0.2); */
+}
+
+.main_text button div p {
+    font-size: 30px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.main_text button p {
+    align-self: center;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.main_microbs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.main_microbs img:first-child {
+    position: absolute;
+    width: 200px;
+    top: 120px;
+    left: -90px;
+}
+.main_microbs img:nth-child(2) {
+    position: absolute;
+    width: 100px;
+    top: 100px;
+    right: 190px;
+    animation: blue1 25s ease-in-out infinite forwards;
+}
+.main_microbs img:nth-child(3) {
+    position: absolute;
+    width: 140px;
+    top: 200px;
+    right: 150px;
+    z-index: 6;
+    animation: blue2 20s ease-in-out infinite forwards;
+}
+.main_microbs img:nth-child(4) {
+    position: absolute;
+    width: 80px;
+    bottom: 200px;
+    left: 50px;
+    animation: left_bottom 25s ease-in-out infinite forwards;
+}
+.main_microbs img:nth-child(5) {
+    position: absolute;
+    width: 80px;
+    top: 50px;
+    right: 50px;
+    animation: r_up 25s ease-in-out infinite forwards;
+}
+
+.main_microbs img:nth-child(6) {
+    position: absolute;
+    width: 500px;
+    top: 200px;
+    right: 100px;
+    z-index: 5;
+}
+
+
+.main_microbs img:nth-child(7) {
+    position: absolute;
+    width: 300px;
+    bottom: 80px;
+    left: -40px;
+    animation: main_blur_semen 25s ease-in-out infinite forwards;
+}
+
+
+.main_microbs img:nth-child(8) {
+    position: absolute;
+    width: 300px;
+    bottom: -140px;
+    left: 550px;
+    animation: big_bottom 25s ease-in-out infinite forwards;
+}
+
+.main_microbs img:nth-child(9) {
+    position: absolute;
+    width: 100px;
+    bottom: 100px;
+    left: 350px;
+}
+
+
+@keyframes blue1 {
+    0% {transform: translate(0) scale(1);}
+    33% {transform: translate(60px, -20px) scale(1.1) rotate(50deg);}
+    66% {transform: translate(-60px) scale(1.1)}
+    100% {transform: translate(0)scale(1);}
+}
+
+@keyframes blue2 {
+    0% {transform: translate(0) scale(1);}
+    33% {transform: translate(-60px, 30px) scale(1.1) rotate(-50deg)}
+    66% {transform: translate(-60px) scale(1.1) rotate(20deg)}
+    100% {transform: translate(0)scale(1);}
+}
+
+@keyframes left_bottom {
+    0% {transform: translate(0) scale(1);}
+    33% {transform: translate(60px, 30px) scale(1.2) rotate(-50deg);}
+    66% {transform: translate(-60px) scale(1.2 rotate(10deg))}
+    100% {transform: translate(0)scale(1);}
+}
+
+@keyframes r_up {
+    0% {transform: translate(0) scale(1);}
+    33% {transform: translate(10px, 30px) scale(1.5) ; }
+    66% {transform: translate(-10px) scale(1.5)}
+    100% {transform: translate(0)scale(1);}
+}
+
+@keyframes main_blur_semen {
+    0% {transform: translate(0) scale(1);}
+    33% {transform: translate(10px, 30px) scale(1.2) ;}
+    66% {transform: translate(-10px) scale(1.2)}
+    100% {transform: translate(0)scale(1);}
+}
+
+@keyframes big_bottom {
+    0% {transform: translate(0) scale(1);}
+    33% {transform: translate(10px, 30px) scale(1.1) rotate(5deg);}
+    66% {transform: translate(-10px) scale(1.1) rotate(-5deg)}
+    100% {transform: translate(0)scale(1);}
+}
